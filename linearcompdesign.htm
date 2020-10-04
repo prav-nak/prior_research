@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Analytical and Computational Mechanics</title>
+
+<link rel="stylesheet" href="style/style.css" media="all" />
+
+<!--[if IE]>
+<style type="text/css">#header h1{ font-size:32px; } .column { width:200px;border:0;overflow:hidden; }</style>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header" >
+<h1>Compliance design <p align="left">Analytical and Computational Mechanics Laboratory</p></h1>
+</div>
+
+<div id="nav">
+<ul>
+<li><a href="index.htm">Home</a></li>
+<li><a href="research.htm">Research</a></li>
+<li><a href="experience.htm">Experience</a></li>
+<li><a href="misc.htm">Misc.</a></li>
+</ul>
+</div>
+
+
+<div id="content">
+<div id="welcome">
+<p>Compliance optimization can be described as finding the stiffest possible design subject to certain resource constraints, e.g., volume fraction constraint. Such an optimization problem can be formulated as follows:</p>
+
+<br>
+<table class="image">
+<tr><td><img src="img/ComplianceForm.png" /></td></tr>
+</table>
+<br>
+
+<!-- ================================================ -->
+<!--                     2D Example                   -->
+<!-- ================================================ -->
+<div class="newrow">
+<p><h4> Two-dimension example*</h4>
+</div>
+<p>Consider a 2D cantilever structure with tip loading at the South-East corner in the South direction. The objective is to find the stiffest possible structure subject to a material volume fraction constraint of 0.5. </p>
+<div class="newrow">
+<img src="img/2DDomain.png" width=240 height=170 align=left/>
+<img src="img/2DCompliance.png" width=240 height=170 align=right/>
+<br>
+*Source: A 99 line topology optimization code written in Matlab, Ole Sigmund
+</div>
+
+<!-- ================================================ -->
+<!--                     3D Example                   -->
+<!-- ================================================ -->
+<div class="newrow">
+<p><h4> Three-dimension example</h4>
+</div>
+<p>Consider a 3D cantilever structure with tip loading. The objective is to find the stiffest possible structure subject to a material volume fraction constraint of 0.6. The mesh size is 40x40x20 (32,000) B8-elements.The chosen material has a linear elastic material response. For the 3D case consistent filtering was used as opposed to filtering only the sensitivities (in 2D case). </p>
+<div class="newrow">
+<img src="img/Compliance.png" width="35%" height="35%" align=left/>
+<br>
+<p>where the material in red is the void region and the blue region is the solid region. </p>
+<img src="img/ComplianceOpt.png" width="35%" height="35%">
+<br>
+</div>
+
+</div>
+</div>
+
+<div id="footer">
+<!--
+<a href="http:///www.nothing.com" target="_blank" class="button"></a>
+-->
+</div>
+
+</div>
+
+</body>
+</html>

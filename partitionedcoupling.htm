@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Analytical and Computational Mechanics</title>
+
+<link rel="stylesheet" href="style/style.css" media="all" />
+
+<!--[if IE]>
+<style type="text/css">#header h1{ font-size:32px; } .column { width:200px;border:0;overflow:hidden; }</style>
+<![endif]-->
+
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header" >
+<h1>Partitioned coupling algorithm<p align="left">Analytical and Computational Mechanics Laboratory</p></h1>
+</div>
+
+<div id="nav">
+<ul>
+<li><a href="index.htm">Home</a></li>
+<li><a href="research.htm">Research</a></li>
+<li><a href="experience.htm">Experience</a></li>
+<li><a href="misc.htm">Misc.</a></li>
+</ul>
+</div>
+
+<div id="content">
+<div id="welcome">
+<p><h5><i>Publication: </h5></i></p>
+<p>A time-staggered partitioned coupling algorithm for transient heat conduction, P.B. Nakshatrala, K.B. Nakshatrala, D.A. Tortorelli</p>
+
+<p>We present a time-staggered partitioned coupling algorithm for transient heat conduction
+finite element simulations. This algorithm divides a large structural mesh into a number
+of smaller subdomains, solves the individual subdomains separately and couples the solutions
+to obtain the response to the original problem. The proposed algorithm is a mixed
+multi-time-step algorithm and enables arbitrary time integration schemes and meshes to be
+coupled with different timesteps in the various subdomains. In this procedure, the solution
+of each partition is separately evaluated over a system timestep after which the interfacial
+conditions are enforced making this a staggered algorithm which facilitates parallel computation.</p>
+
+<p>The standard finite element weak form can be modified to include the jump terms and also by including an additional stabilization term as shown. The quantities in the angled brackets represent the averaged quantities over the interface and quantities in square brackets represent the jumps across the interface. Hence the weak form for parabolic systems now read:</p>
+<br>
+<table class="image">
+<tr><td><img src="img/DGEqn.png" /></td></tr>
+</table>
+<br>
+
+<p>Note that this formulation allows us to have nonconformingmeshes across the interface, i.e., the subdomain meshes can be created independently.</p>
+
+<!-- ================================================ -->
+<!--                     2D Example                   -->
+<!-- ================================================ -->
+<div class="newrow">
+<p><h4> Two-dimension example</h4></p>
+</div>
+<p>As an example, we partition the domain into 4 partitions as shown in Figure (a). We calculate the temperature field using standard Galerkin formulation and proposed discontinuous Galerkin formulation. The steady state response is shown below. For the stability and error analysis, refer the manuscript. 
+</p>
+<br>
+<table class="image">
+<caption align="bottom">Figure 1. Steady state response</caption>
+<tr><td><img src="img/SteadyState.png" /></td></tr>
+</table>
+<br>
+
+<p>Next, consider the same domain, but the conductivity as a function of temperature. This makes the problem nonlinear. For the same mesh shown in Figure (a), the transient response is as shown below. </p>
+<br>
+<table class="image">
+<caption align="bottom">Figure 2. Nonlinear transient response at various instants in time</caption>
+<tr><td><img src="img/NonlinTransient.png" /></td></tr>
+</table>
+<br>
+<p>The above formulation can be used for solid-liquid interface tracking. </p>
+
+
+
+</div>
+</div>
+
+<div id="footer">
+<!--
+<a href="http:///www.nothing.com" target="_blank" class="button"></a>
+-->
+</div>
+
+</div>
+
+</body>
+</html>
