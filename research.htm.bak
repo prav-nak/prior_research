@@ -10,7 +10,7 @@
   <body>
     <div id="container">
       <div id="header">
-        <h1>Nakshatrala's page
+        <h1>Nakshatrala's Research
           <p align="left">Analytical and Computational Mechanics Laboratory</p>
         </h1>
       </div>
@@ -30,49 +30,61 @@
           <img src="img/plot3.gif" />
           <p>Inverse homogenization procedure aids us to design tailored
             materials with desired material properties.</p>
-          <p align="right"> <a href="linearmatdesign.htm" class="button">Read
-              On</a> </p>
+          <p align="right">
+            <a href="linearmatdesign.htm" class="button">Read On</a>
+          </p>
         </div>
         <div class="column">
           <h3>Compliance Design</h3>
           <img src="img/Compliance.png" height="197," width="196/" />
           <p>Compliance design involves designing stiffest possible structures
             subject to certain resource constraints. </p>
-          <p align="right"> <a href="linearcompdesign.htm" class="button">Read
-              On</a> </p>
+          <p align="right">
+            <a href="linearcompdesign.htm" class="button">Read On</a>
+          </p>
         </div>
+
         <div class="column">
           <h3>Multiscale finite elements</h3>
           <img src="img/MSFem.png" height="196/" width="220," />
           <p>Multiscale finite elements generate the partition of unity for
             shapefunctions through the solution of a homogeneous problem that
             takes the underlying heterogeneities into consideration.</p>
-          <p align="right"> <a href="msfem.htm" class="button">Read On</a> </p>
+          <p align="right">
+            <a href="msfem.htm" class="button">Read On</a>
+          </p>
         </div>
+
         <div class="column">
           <h3>Stabilized finite elements</h3>
           <img src="img/Stefan.png" height="196/" width="197," />
           <p>Partitioned coupling algorithms divide a large structural mesh into
-            a number of smaller subdomains, solve the individual subdomains
-            separately and couple the solutions to obtain the response to the
-            original problem.</p>
-          <p align="right"> <a href="partitionedcoupling.htm" class="button">Read
-              On</a> </p>
+            a number of smaller subdomains, solve the
+            individual subdomains separately and couple the solutions to obtain
+            the response to the original problem.</p>
+          <p align="right">
+            <a href="partitionedcoupling.htm" class="button">Read On</a>
+          </p>
         </div>
+
         <br />
         <br />
-        <p> </p>
+        <p>
+        </p>
         <div id="welcomefooter">
           <h3><u>Nonlinear theory:</u></h3>
         </div>
+
         <div class="column">
           <h3>Homogenization</h3>
           <img src="img/Micro3D.png" height="196/" width="197" />
           <p>Homogenization theory deals with finding the effective properties
             of materials with given heterogeneities. </p>
-          <p align="right"> <a href="nonlinhomog.htm" class="button">Read On</a>
+          <p align="right">
+            <a href="nonlinhomog.htm" class="button">Read On</a>
           </p>
         </div>
+
         <div class="column">
           <h3>Coupled multiscale design</h3>
           <br />
@@ -80,32 +92,38 @@
           <p>The primary focus of the Analytical &amp; Computational Mechanics
             Lab is to transform existing analysis tools into design optimization
             tools.</p>
-          <p align="right"> <a href="nonlincoupleddesign.htm" class="button">Read
-              On</a> </p>
+          <p align="right">
+            <a href="nonlincoupleddesign.htm" class="button">Read On</a>
+          </p>
         </div>
+
         <div class="column">
           <h3>Shape Optimization</h3>
           <img src="img/Shape.jpg" height="197/" width="310" />
           <p>The primary focus of the Analytical &amp; Computational Mechanics
             Lab is to transform existing analysis tools into design optimization
             tools.</p>
-          <p align="right"> <a href="shapeopt.htm" class="button">Read On</a> </p>
+          <p align="right">
+            <a href="shapeopt.htm" class="button">Read On</a>
+          </p>
         </div>
+
         <div class="column">
           <h3>Transient Optimization</h3>
           <img src="img/Shape.jpg" height="197/" width="310" />
           <p>The primary focus of the Analytical &amp; Computational Mechanics
             Lab is to transform existing analysis tools into design optimization
             tools.</p>
-          <p align="right"> <a href="transient.htm" class="button">Read On</a>
+          <p align="right">
+            <a href="transient.htm" class="button">Read On</a>
           </p>
         </div>
       </div>
       <p></p>
       <div id="footer">
         <!--
-<a href="http:///www.nothing.com" target="_blank" class="button"></a>--> </div>
+<a href="http:///www.nothing.com" target="_blank" class="button"></a>-->
+      </div>
     </div>
-    
   </body>
 </html>

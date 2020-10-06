@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
-    <title>Analytical and Computational Mechanics</title>
+    <title>Homepage of Praveen Babu Nakshatrala</title>
     <link rel="stylesheet" href="style/style.css" media="all" />
     <!--[if IE]>
 <style type="text/css">#header h1{ font-size:32px; } .column { width:200px;border:0;overflow:hidden; }</style><![endif]-->
@@ -10,7 +10,7 @@
   <body>
     <div id="container">
       <div id="header">
-        <h1>Nakshatrala's page
+        <h1>Nakshatrala's Research
           <p align="left">Analytical and Computational Mechanics Laboratory</p>
         </h1>
       </div>
@@ -22,48 +22,42 @@
         </ul>
       </div>
       <div id="content">
+        <div id="welcome">
+          <p style="width: 800px;">My research focusses on the development of
+            computational models for multiscale phenomena and related structural
+            optimization applications. Specifically, I develop efficient
+            optimization algorithms and large scale simulation techniques to
+            improve the macroscopic structural response. I primarily use
+            topology optimization and finite element analysis in achieving
+            various design objectives. Recent focus has been on microstructure
+            modeling with nonlinear material response tailored for impact
+            loading and stress wave mitigation. </p>
+          <h4>Research Interests: Computational mechanics, Structural
+            optimization, Finite elements, Multiscale modeling, Continuum
+            mechanics</h4>
+        </div>
         <div id="welcomefooter">
-          <h3><u>Linear theory:</u></h3>
+          <h2><u>Linear theory:</u></h2>
         </div>
         <div class="column">
           <h3>Material design</h3>
           <img src="img/plot3.gif" />
           <p>Inverse homogenization procedure aids us to design tailored
-            materials with desired material properties.</p>
-          <p align="right"> <a href="linearmatdesign.htm" class="button">Read
-              On</a> </p>
+            materials with desired material properties. </p>
+          <p align="right"> <a href="" class="button">Read On</a> </p>
         </div>
         <div class="column">
           <h3>Compliance Design</h3>
-          <img src="img/Compliance.png" height="197," width="196/" />
+          <img src="img/Compliance.png" height="196," width="197/" />
           <p>Compliance design involves designing stiffest possible structures
             subject to certain resource constraints. </p>
           <p align="right"> <a href="linearcompdesign.htm" class="button">Read
               On</a> </p>
         </div>
-        <div class="column">
-          <h3>Multiscale finite elements</h3>
-          <img src="img/MSFem.png" height="196/" width="220," />
-          <p>Multiscale finite elements generate the partition of unity for
-            shapefunctions through the solution of a homogeneous problem that
-            takes the underlying heterogeneities into consideration.</p>
-          <p align="right"> <a href="msfem.htm" class="button">Read On</a> </p>
-        </div>
-        <div class="column">
-          <h3>Stabilized finite elements</h3>
-          <img src="img/Stefan.png" height="196/" width="197," />
-          <p>Partitioned coupling algorithms divide a large structural mesh into
-            a number of smaller subdomains, solve the individual subdomains
-            separately and couple the solutions to obtain the response to the
-            original problem.</p>
-          <p align="right"> <a href="partitionedcoupling.htm" class="button">Read
-              On</a> </p>
-        </div>
-        <br />
-        <br />
+        <p></p>
         <p> </p>
         <div id="welcomefooter">
-          <h3><u>Nonlinear theory:</u></h3>
+          <h2><u>Nonlinear theory:</u></h2>
         </div>
         <div class="column">
           <h3>Homogenization</h3>
@@ -80,32 +74,19 @@
           <p>The primary focus of the Analytical &amp; Computational Mechanics
             Lab is to transform existing analysis tools into design optimization
             tools.</p>
-          <p align="right"> <a href="nonlincoupleddesign.htm" class="button">Read
-              On</a> </p>
-        </div>
-        <div class="column">
-          <h3>Shape Optimization</h3>
-          <img src="img/Shape.jpg" height="197/" width="310" />
-          <p>The primary focus of the Analytical &amp; Computational Mechanics
-            Lab is to transform existing analysis tools into design optimization
-            tools.</p>
-          <p align="right"> <a href="shapeopt.htm" class="button">Read On</a> </p>
-        </div>
-        <div class="column">
-          <h3>Transient Optimization</h3>
-          <img src="img/Shape.jpg" height="197/" width="310" />
-          <p>The primary focus of the Analytical &amp; Computational Mechanics
-            Lab is to transform existing analysis tools into design optimization
-            tools.</p>
-          <p align="right"> <a href="transient.htm" class="button">Read On</a>
-          </p>
+          <p align="right"> <a href="" class="button">Read On</a> </p>
         </div>
       </div>
       <p></p>
       <div id="footer">
         <!--
 <a href="http:///www.nothing.com" target="_blank" class="button"></a>--> </div>
+      <p align="right"> <br />
+        <br />
+        <a href="research.htm" class="button">More research</a> </p>
+      <div id="footer">
+        <!--
+<a href="http:///www.nothing.com" target="_blank" class="button"></a>--> </div>
     </div>
-    
   </body>
 </html>
