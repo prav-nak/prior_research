@@ -32,9 +32,24 @@
 
     <div id="content">
         <div id="welcome">
-            <p>In shape optimization, a typical design problem is posed as finding the optimal shape of a structure under a given loading so as to minimize a cost function subject to certain constraints. As an example, finding an optimal shape of a cantilever beam to minimize the tip deflection subject to volume constraint. Methods like shape optimization work on a subset of allowable shapes with fixed topological properties, that is no new boundaries (ex: holes) can be introduced. </p>
-            <p>As an example, we find the optimal shape of a transversely loaded plate with a concentrated tip load as shown in Figure 1. </p>
+            <p>Topology optimization using the restriction method discussed is largely
+                successful for designing structures which are comprised of homogeneous material. It is not
+                particularly efficient for designing bodies comprised of heterogeneous materials. For this
+                purpose, we adopt topology optimization using the relaxation approach, i.e. homogenization.</p>
             <br>
+            <p> Specifically, we use the relaxation topology
+                optimization method to design the material microstructure field for optimal dynamic structural response. This class of optimization problems has potential applications in acoustic,
+                earthquake mitigation, crashworthiness, impact and blast resistance, etc.</p>
+               
+                <div class="newrow">
+                    <img src="img/negpos.png" width="80%" height="100%" align=left/>
+                </div>
+
+                <p>
+                    Figure shows microstructure obtained by this inverse homogenization process.
+The unit cell on the left design exhibits a negative Poison's ratio. 
+The black and white are solid material and void,
+respectively.              </p>
         </div>
     </div>
 
