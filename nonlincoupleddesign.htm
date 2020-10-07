@@ -16,11 +16,9 @@
 
 <div id="container">
 
-        <div id="header">
-            <h1>Nakshatrala's page
-            <p align="left">Analytical and Computational Mechanics Laboratory</p>
-            </h1>
-        </div>
+    <div id="header" >
+        <h1>Coupled mulitscale design<p align="left">Analytical and Computational Mechanics Laboratory</p></h1>
+    </div>
 
     <div id="nav">
         <ul>
@@ -32,10 +30,21 @@
 
     <div id="content">
         <div id="welcome">
-            <p>In shape optimization, a typical design problem is posed as finding the optimal shape of a structure under a given loading so as to minimize a cost function subject to certain constraints. As an example, finding an optimal shape of a cantilever beam to minimize the tip deflection subject to volume constraint. Methods like shape optimization work on a subset of allowable shapes with fixed topological properties, that is no new boundaries (ex: holes) can be introduced. </p>
-            <p>As an example, we find the optimal shape of a transversely loaded plate with a concentrated tip load as shown in Figure 1. </p>
+            <p>We use topology optimization with the relaxation approach for our
+                material microstructure design problem. This approach requires homogenization to arrive
+                at the elasticity tensor. As a static example, we design a transversely tip loaded cantilever beam for minimum
+                compliance subject to a total volume constraint. </p>
             <br>
         </div>
+    </div>
+
+    <div class="newrow">
+        <img src="img/multilevel.png" width="80%" height="100%" align=left/>
+    </div>
+
+    <div class="newrow">
+        <img src="img/EightyForty_result.png" width="80%" height="100%" align=left/><br>
+        <caption align="bottom">Cantilever beam optimization for minimum compliance using homogenization</caption>
     </div>
 
     <div id="footer">

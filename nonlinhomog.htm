@@ -16,10 +16,9 @@
 
 <div id="container">
 
-<div id="header" >
-<h1>Analytical and Computational Mechanics</h1>
-<p>Welcome to Analytical and Computational Mechanics laboratory. </p>
-</div>
+    <div id="header" >
+        <h1>Nonlinear homogenization<p align="left">Analytical and Computational Mechanics Laboratory</p></h1>
+    </div>
 
 <div id="nav">
 <ul>
@@ -31,7 +30,31 @@
 
 <div id="content">
 <div id="welcome">
+<p>The primary goal of homogenization is to extract the macroscopic "averaged" response from the
+    infinitesimal highly oscillatory microscopic response. For linear elastic materials the mathematical
+    theory of asymptotic expansions is used to obtain analytical relations. 
+    Unfortunately, the availability of analytical homogenization expressions for nonlinear materials is limited, and the process of deriving them is an
+    active area of research. For this reason, the finite
+    element method is often used to approximate the material point homogenized response of nonlinear materials. This results in a coupled boundary value problem: the macroscale problem and
+    numerous microscale problems. 
+</p>
+
 <div class="newrow">
+    <table class="image">
+    <tr><td><img src="img/consistenttangent.png" /></td></tr>
+    </table>
+    <br>
+</div>
+
+<p>Owing to the embarrassingly parallel nature of the problem due to the independent analyses of the micro problems, the implementation is parallelized via MPI.
+        Depending on the size of the computational mesh, the equilibrium solution via finite elements could require
+        the solution of hundreds of thousands of nonlinear micro-analyses. The computational time will
+        be enormous if this problem were solved in a sequential manner.  And hence naively integrating such a sequential framework into an iterative optimization loop is prohibitive. To resolve
+        this problem we use parallel programming to effectively distribute the computations across a multitude of processors. Moreover since each of the micro-analyses is independent of one another, our
+        implementation is embarrassingly parallel.
+</p> 
+        
+    <!-- <div class="newrow">
 <table class="image">
 <tr><td><img src="img/3DCantilever.png" width=375 height=225/></td></tr>
 </table>
@@ -43,6 +66,13 @@
 <tr><td><img src="img/Micro3D.png" /></td></tr>
 </table>
 <br>
+</div> -->
+
+<div class="newrow">
+    <table class="image">
+    <tr><td><img width=80% src="img/parallel.png" /></td></tr>
+    </table>
+    <br>
 </div>
 
 
